@@ -14,7 +14,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 350px;
+    gap:100px;
 }
 .btn{
     background: rgb(192, 0, 160);
@@ -57,9 +57,21 @@ section{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+#home .rightImg img{
+    width:100%;
+}
 
 
 
+
+/*========================== Brand Section Styles Start Here ==========================*/
+#brand .childWrapper{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#brand .childWrapper .sBrand{
+    flex-basis: 120px;
+}
 
 
 
@@ -153,7 +165,9 @@ section{
     outline-offset: 0;
     outline-color: rgb(255, 105, 192);
 }
-
+#product .btnCenter{
+    text-align: right;
+}
 
 
 
@@ -224,6 +238,7 @@ section{
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
+    color:rgb(157, 143, 250);
 }
 #footer .socialLinks li:hover{
     border-bottom: 4px solid skyblue;
@@ -250,6 +265,43 @@ section{
 ==========================*/
 
 
-@media screen and (max-width:1200px){
-    
+@media screen and (max-width:600px){
+
+    .childWrapper{
+        flex-direction: column;
+        gap:50px;
+    }
+    section{
+        padding:50px 2%;  
+    }
+    #product .childWrapper{
+        grid-template-columns:repeat(1, 1fr) !important;
+    }
+    #product .childWrapper .sProduct{
+        width:70%;
+        margin:auto;
+    }
+    #home .rightImg{
+        text-align: center;
+    }
+    #home .rightImg img{
+        width:70%;
+    }
+    #product .btnCenter{
+        text-align: center;
+    }
+}
+@media screen and (max-width:900px){
+    .childWrapper{
+        gap:40px;
+    }
+    #home .leftInfo h1{
+        font-size: 30px;
+    }
+    #home .rightImg img{
+        width:240px;
+    }
+    #product .childWrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
