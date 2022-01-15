@@ -35,8 +35,6 @@ section{
 
 
 
-
-
 /*========================== Home Section Styles Start Here ==========================*/
 #home{
     background: linear-gradient(45deg, #faa8a8, #ccfceb, #f8f8c7, #fcd6dd);
@@ -64,7 +62,6 @@ section{
 
 
 
-
 /*========================== Brand Section Styles Start Here ==========================*/
 #brand .childWrapper{
     flex-wrap: wrap;
@@ -81,9 +78,6 @@ section{
 #brand .childWrapper .sBrand img{
     width: 85%;
 }
-
-
-
 
 
 
@@ -182,17 +176,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*========================== Footer Section Styles Start Here ==========================*/
 #footer{
     padding:50px;
@@ -262,15 +245,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
 /*=========================
 ***Responsive Design Here***
 ==========================*/
@@ -292,7 +266,7 @@ section{
         width:70%;
         margin:auto;
     }
-    #home .rightImg,.leftInfo{
+    #home .rightImg, .leftInfo{
         text-align: center;
     }
     #home .leftInfo .btn{
