@@ -1,0 +1,86 @@
+/* Utilities Styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width:870px;
+    background: #FFFFFF;
+}
+.secTittle{
+    font-size: 24px;
+    color:#562EFF;
+    display: inline-block;
+}
+.secTittle:hover{
+    text-decoration: underline;
+}
+hr{
+    margin-top: 20px;
+    border-bottom: none;
+    border-left:none;
+    border-right: none;
+    border-color: #D1D1D1;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! topPlayer Section Style Start Here  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#topPlayer{
+    padding:30px;
+}
+#topPlayer .players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    margin-top:30px;
+}
+#topPlayer .players .sPlayers{
+    display: flex;
+    align-items: center;
+}
+#topPlayer .players .sPlayers .playerName{
+    margin-left: 20px;
+}
+#topPlayer .players .sPlayers img{
+    width:56px;
+    height:56px;
+}
+.topBlog{
+    margin-top: 20px;
+}
+.topBlog .blogs{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+.topBlog .blogs .sBlog{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.topBlog .blogs .sBlog img{
+    width: 50%;
+}
+.topBlog .blogs .sBlog .desc h3{
+    font-weight: 500;
+    font-size: 23px;
+}
+.topBlog .blogs .sBlog .desc p{
+    color:#9F9F9F;
+}
+.topBlog .blogs .sBlog .desc p span{
+    color:#562EFF;
+}
